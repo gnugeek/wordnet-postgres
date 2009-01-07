@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>WordNet SQL Builder</title>
+<meta name="author" content="Bernard Bou">
+<meta name="created" content="20050201;12154260">
+<meta name="changedby" content="Bernard Bou">
+<meta name="changed" content="20070220;10000000">
+<meta name="keywords" content="wordnet,sql">
+<link rel="stylesheet" href="wordnet-style.css" type="text/css">
+</head>
+<body>
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td class="color1" width="25%">&nbsp;</td>
+      <td class="color2" width="25%">&nbsp;</td>
+      <td class="color3" width="25%">&nbsp;</td>
+      <td class="color4" width="25%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="4"><p align="center"><img src="images/wnlogo.gif" alt="wordnet" width="279" height="92"><br>
+</p></td>
+    </tr>
+    <tr>
+      <td colspan="4"><p align="center"> <span class="color4"><b>wordnet sql builder </b></span><br>
+          <span class="subtitle">Bernard Bou</span><br>
+      <a href="mailto:bbou@ac-toulouse.fr">bbou@ac-toulouse.fr</a></p></td>
+    </tr>
+    <tr>
+      <td class="color1" width="25%">&nbsp;</td>
+      <td class="color2" width="25%">&nbsp;</td>
+      <td class="color3" width="25%">&nbsp;</td>
+      <td class="color4" width="25%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>LAUNCH</strong></p>
+<ul>
+  <li>    <em>*ixes:</em><br>
+    $JAVA_HOME/jre/bin/java -classpath WordNetSQLBuilder.jar:./lib/mysql-connector-java-3.1.12-bin.jar edu.princeton.wordnet.util.Builder WordNetSQLBuilder-mysql.properties [stage] <br>
+  $JAVA_HOME/jre/bin/java -classpath WordNetSQLBuilder.jar:./lib/postgresql-8.0.309.jdbc3.jar edu.princeton.wordnet.util.Builder WordNetSQLBuilder-postgresql.properties [stage]</li>
+  <li>    <em>Windows:</em><br>
+&quot;%JAVA_HOME%\jre\bin\java.exe&quot; -classpath WordNetSQLBuilder.jar;./lib/mysql-connector-java-3.1.12-bin.jar edu.princeton.wordnet.util.Builder WordNetSQLBuilder-mysql.properties [stage]<br>
+&quot;%JAVA_HOME%\jre\bin\java.exe&quot; -classpath WordNetSQLBuilder.jar;./lib/postgresql-8.0.309.jdbc3.jar edu.princeton.wordnet.util.Builder WordNetSQLBuilder-postgresql.properties [stage]<br>
+  </li>
+</ul>
+<p><strong>PROPERTY FILES</strong></p>
+<ul>
+  <li><strong>mysql</strong><br>driver = com.mysql.jdbc.Driver<br>
+    url = jdbc:mysql://localhost:3306/wordnet20<br>
+    dbms = mysql<br>
+    user= wnwa<br>
+    password = wnwa<br>
+    home=/opt/WordNet-3.0<br>
+    sm1home=/opt/WordNet-2.1/sensemap<br>
+    sm2home=/opt/WordNet-3.0/sensemap<br>
+    xwnhome=/opt/XWordNet-2.0-1.1<br>
+    vnhome=/opt/verbnet-2.1<br>
+    loghome = /tmp<br>
+    verbose = false<br>
+    start = 0<br>
+  </li>
+  <li>    <strong>postgresql</strong><br>
+    driver = org.postgresql.Driver<br>
+    url = jdbc:postgresql://localhost:5432/wordnet20<br>
+    dbms = postgresql<br>
+    user= postgres<br>
+    password = postgres<br>
+    home=/opt/WordNet-3.0<br>
+    sm1home=/opt/WordNet-2.1/sensemap<br>
+    sm2home=/opt/WordNet-3.0/sensemap<br>
+    xwnhome=/opt/XWordNet-2.0-1.1<br>
+    vnhome=/opt/verbnet-2.1<br>
+    loghome = /tmp <br>
+    verbose = false<br>
+    start = 0<br>
+  </li>
+</ul>
+<p><strong>INCREMENTAL BUILD</strong></p>
+<p>The stage (either on the command line or in the property file) is an integer code n. When n is positive, all the stages starting from n will be carried out. When negative if refers to this stage only (without the following steps). For ease of reference, strings can replace the step's code number. For complete reference see below. </p>
+<table border="1" cellpadding="5">
+  <caption class="header">
+  stages
+  </caption>
+  
+  <tr>
+    <th>global step</td>
+    <th><div align="center">description</div></th>
+    <th>standalone step</th>
+  </tr>
+  <tr>
+    <td>all</td>
+    <td><div align="center">wordnet</div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">drop all existing tables<br>
+      create all tables</div></td>
+    <td>resume drop tables </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">flush categoryid, linkdef tables <br>
+    build categoryid, linkdef tables</div></td>
+    <td>resume tables </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">flush word table <br>
+    build word table</div></td>
+    <td>resume words</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">flush all tables derived from indices<br>
+    build all tables derived from indices</div></td>
+    <td>resume indices</td>
+ </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">flush all tables derived from synset tables <br>
+    build all tables derived from synset tables </div></td>
+    <td>resume synsets</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">flush morph tables <br>
+  build morph tables<br>
+    </div></td>
+    <td>resume morphs</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">flush frame tables<br>
+build frame tables <br>
+</div></td>
+    <td>resume frames</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">update  tags and lexid fields;<br>
+</div></td>
+    <td>resume tags lexids</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">flush sentence tables<br>
+build  sentence tables<br>
+</div></td>
+    <td>resume sentences</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">create indexes<br>
+apply unique constraints<br>
+apply foreign key constraints</div></td>
+    <td>resume constraints</td>
+  </tr>
+</table>
+<br>
+<table border="1" cellpadding="5">
+  <caption class="header">
+  extra stages
+  </caption>  <tr>
+    <td>sense maps</td>
+    <td><div align="center">wordnet synset id map from 2.0 to 3.0</div></td>
+  </tr>
+  <tr>
+    <td>sense map 1</td>
+    <td><div align="center">wordnet synset id map from 2.0 to 2.1</div></td>
+  </tr>
+  <tr>
+    <td>sense map 2</td>
+    <td><div align="center">wordnet synset id map from 2.1 to 3.0</div></td>
+  </tr>
+  <tr>
+    <td>xwordnet</td>
+    <td><div align="center">xwordnet</div></td>
+  </tr>
+  <tr>
+    <td>verbnet</td>
+    <td><div align="center">verbnet</div></td>
+  </tr>
+</table>
+<p><strong>Command ids and strings</strong></p>
+<table border="1">
+<tr><td>all</td><td>ALL</td><td>0</td></tr>
+<tr><td>create tables</td><td>CREATETABLES</td><td>1</td></tr>
+<tr><td>drop tables</td><td>-DROPTABLES</td><td>10</td></tr>
+<tr><td>create static tables</td><td>CREATESTATICTABLES</td><td>2</td></tr>
+<tr><td>create extra tables</td><td>-CREATEXTABLES</td><td>30</td></tr>
+<tr><td>drop extra tables</td><td>-DROPXTABLES</td><td>31</td></tr>
+<tr><td>words</td><td>WORDS</td><td>3</td></tr>
+<tr><td>indices</td><td>INDICES</td><td>4</td></tr>
+<tr><td>synsets</td><td>SYNSETS</td><td>5</td></tr>
+<tr><td>morphs</td><td>MORPHS</td><td>6</td></tr>
+<tr><td>frames</td><td>FRAMES</td><td>7</td></tr>
+<tr><td>tags lexids</td><td>TAGSLEXIDS</td><td>8</td></tr>
+<tr><td>sentences</td><td>SENTENCES</td><td>9</td></tr>
+
+<tr><td>constraints</td><td>-CONSTRAINTS</td><td>11</td></tr>
+<tr><td>drop constraints</td><td>-DROPCONSTRAINTS</td><td>12</td></tr>
+<tr><td>primary key constraints</td><td>-PKCONSTRAINTS</td><td>13</td></tr>
+<tr><td>drop primary key constraints</td><td>-DROPPKCONSTRAINTS</td><td>14</td></tr>
+<tr><td>key constraints</td><td>-KCONSTRAINTS</td><td>15</td></tr>
+<tr><td>drop key constraints</td><td>-DROPKCONSTRAINTS</td><td>16</td></tr>
+<tr><td>unique constraints</td><td>-UNQCONSTRAINTS</td><td>17</td></tr>
+<tr><td>drop unique constraints</td><td>-DROPUNQCONSTRAINTS</td><td>18</td></tr>
+<tr><td>foreign key constraints</td><td>-FKCONSTRAINTS</td><td>19</td></tr>
+<tr><td>drop foreign key constraints</td><td>-DROPFKCONSTRAINTS</td><td>20</td></tr>
+
+<tr><td>extra constraints</td><td>-XCONSTRAINTS</td><td>32</td></tr>
+<tr><td>drop extra constraints</td><td>-DROPXCONSTRAINTS</td><td>33</td></tr>
+<tr><td>show tables</td><td>-SHOWTABLES</td><td>21</td></tr>
+<tr><td>show properties</td><td>-SHOWPROPERTIES</td><td>22</td></tr>
+<tr><td>create skeleton</td><td>-SKELETON</td><td>23</td></tr>
+<tr><td>drop skeleton</td><td>-DROPSKELETON</td><td>24</td></tr>
+
+<tr><td>create sense maps</td><td>-CREATELEGACYTABLES</td><td>40</td></tr>
+<tr><td>drop sense maps</td><td>-DROPLEGACYTABLES</td><td>41</td></tr>
+<tr><td>sense map 1</td><td>-LEGACY1</td><td>44</td></tr>
+<tr><td>flush sense map 1</td><td>-FLUSHLEGACY1</td><td>45</td></tr>
+<tr><td>sense map 2</td><td>-LEGACY2</td><td>46</td></tr>
+<tr><td>flush sense map 2</td><td>-FLUSHLEGACY2</td><td>47</td></tr>
+<tr><td>sense maps</td><td>-LEGACY</td><td>42</td></tr>
+<tr><td>flush sense maps</td><td>-FLUSHLEGACY</td><td>43</td></tr>
+
+<tr><td>xwordnet</td><td>-XWORDNET</td><td>50</td></tr>
+<tr><td>flush xwordnet</td><td>-FLUSHXWORDNET</td><td>51</td></tr>
+<tr><td>verbnet</td><td>-VERBNET</td><td>60</td></tr>
+<tr><td>flush verbnet</td><td>-FLUSHVERBNET</td><td>61</td></tr>
+<tr><td>read synset [synsetid]</td><td>-READSYNSET</td><td>100</td></tr>
+<tr><td>read index [index] [n|v|a|r]</td><td>-READINDEX</td><td>101</td></tr>
+<tr><td>retrieve sensekey [sensekey]</td><td>-RETRIEVESENSEKEY</td><td>102</td></tr>
+</table>
+<p><br>
+</p>
+<div align="center"><br>
+</div>
+</body>
+</html>

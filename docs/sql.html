@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>WordNet SQL Builder - sample queries</title>
+<meta name="author" content="Bernard Bou">
+<meta name="created" content="20050201;12154260">
+<meta name="changedby" content="Bernard Bou">
+<meta name="changed" content="20070220;10000000">
+<meta name="keywords" content="wordnet,sql">
+<link rel="stylesheet" href="wordnet-style.css" type="text/css">
+</head>
+<body>
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td class="color1" width="25%">&nbsp;</td>
+      <td class="color2" width="25%">&nbsp;</td>
+      <td class="color3" width="25%">&nbsp;</td>
+      <td class="color4" width="25%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="4"><p align="center"><img src="images/wnlogo.gif" alt="wordnet" width="279" height="92"><br>
+</p></td>
+    </tr>
+    <tr>
+      <td colspan="4"><p align="center"> <span class="color4"><b>wordnet sql builder </b></span><br>
+          <span class="subtitle">Bernard Bou</span><br>
+      <a href="mailto:bbou@ac-toulouse.fr">bbou@ac-toulouse.fr</a></p></td>
+    </tr>
+    <tr>
+      <td class="color1" width="25%">&nbsp;</td>
+      <td class="color2" width="25%">&nbsp;</td>
+      <td class="color3" width="25%">&nbsp;</td>
+      <td class="color4" width="25%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+use wordnet30;
+
+<p><strong>-- hypernyms horse (n)</strong></p>
+select se1.rank,w2.lemma<br>
+from word w1<br>
+left join sense se1 on w1.wordid = se1.wordid<br>
+left join synset sy1 on se1.synsetid = sy1.synsetid<br>
+left join semlinkref on sy1.synsetid = semlinkref.synset1id<br>
+left join synset sy2 on semlinkref.synset2id = sy2.synsetid<br>
+left join sense se2 on sy2.synsetid = se2.synsetid<br>
+left join word w2 on se2.wordid = w2.wordid<br>
+where w1.lemma = 'horse'<br>
+and sy1.pos = 'n'<br>
+and semlinkref.linkid = 1<br>
+order by se1.rank asc;<br>
+
+<p><strong>-- hyponyms horse (n)</strong></p>
+select se1.rank,w2.lemma<br>
+from word w1<br>
+left join sense se1 on w1.wordid = se1.wordid<br>
+left join synset sy1 on se1.synsetid = sy1.synsetid<br>
+left join semlinkref on sy1.synsetid = semlinkref.synset1id<br>
+left join synset sy2 on semlinkref.synset2id = sy2.synsetid<br>
+left join sense se2 on sy2.synsetid = se2.synsetid<br>
+left join word w2 on se2.wordid = w2.wordid<br>
+where w1.lemma = 'horse'<br>
+and sy1.pos = 'n'<br>
+and semlinkref.linkid = 2<br>
+order by se1.rank asc;<br>
+
+<p><strong>-- get antonyms for adjective 'black'</strong></p>
+select se1.rank, w2.lemma, sy1.definition, sy2.definition
+from word w1
+left join sense se1 on w1.wordid = se1.wordid
+left join synset sy1 on se1.synsetid = sy1.synsetid
+left join lexlinkref on sy1.synsetid = lexlinkref.synset1id and w1.wordid = lexlinkref.word1id
+left join synset sy2 on lexlinkref.synset2id = sy2.synsetid
+left join sense se2 on sy2.synsetid = se2.synsetid
+left join word w2 on se2.wordid = w2.wordid
+where w1.lemma = 'black' and sy1.pos = 'a' and lexlinkref.linkid =30
+order by se1.rank asc; 
+
+<p><strong>-- get verbnet thematic roles for verb 'want'</strong></p>
+select word.lemma,synset.synsetid,vnrole.rolesetid,vnroletype.type,vnselrestrs.selrestrs<br>
+from word<br>
+left join sense on word.wordid=sense.wordid<br>
+left join synset on sense.synsetid=synset.synsetid<br>
+left join vnrole on synset.synsetid=vnrole.synsetid and word.wordid=vnrole.wordid<br>
+left join vnroletype on vnrole.roletypeid=vnroletype.roletypeid<br>
+left join vnselrestrs on vnrole.selrestrsid=vnselrestrs.selrestrsid<br>
+where synset.pos='v' and word.lemma='want';<br>
+
+<p><strong>-- get xwordnet parses for verb 'want'</strong></p>
+select word.lemma,synset.synsetid,xwnparselft.parse<br>
+from word<br>
+left join sense on word.wordid=sense.wordid<br>
+left join synset on sense.synsetid=synset.synsetid<br>
+left join xwnparselft on synset.synsetid=xwnparselft.synsetid<br>
+where synset.pos='v' and word.lemma='want';<br>
+
+<p><strong>-- get xwordnet lft for verb 'want'</strong></p>
+select word.lemma,synset.synsetid,xwnparselft.lft<br>
+from word<br>
+left join sense on word.wordid=sense.wordid<br>
+left join synset on sense.synsetid=synset.synsetid<br>
+left join xwnparselft on synset.synsetid=xwnparselft.synsetid<br>
+where synset.pos='v' and word.lemma='want';<br>
+
+<p><strong>-- get xwordnet wsd for verb 'want'</strong></p>
+select word.lemma,synset.synsetid,xwnwsd.wsd<br>
+from word<br>
+left join sense on word.wordid=sense.wordid<br>
+left join synset on sense.synsetid=synset.synsetid<br>
+left join xwnwsd on synset.synsetid=xwnwsd.synsetid<br>
+where synset.pos='v' and word.lemma='want';<br>
+
+<p><strong>-- get verbnet syntax/semantics for verb 'want'</strong></p>
+select word.lemma,synset.synsetid,vnframeref.frameid,vnexampledef.example,vnframedef.syntax,vnframedef.semantics<br>
+from word<br>
+left join sense on word.wordid=sense.wordid<br>
+left join synset on sense.synsetid=synset.synsetid<br>
+left join vnframeref on synset.synsetid=vnframeref.synsetid and word.wordid=vnframeref.wordid<br>
+left join vnframedef on vnframeref.frameid=vnframedef.frameid<br>
+left join vnexampleref on vnframeref.frameid=vnexampleref.frameid<br>
+left join vnexampledef on vnexampleref.exampleid=vnexampledef.exampleid <br>
+where synset.pos='v' and word.lemma='want';<br>
+
+<p><strong>-- wordnet 2.0->3.0</strong></p>
+select *<br>
+from legacy2030<br>
+where synsetid2=100124550;<br>
+
+<p><strong>--wordnet 3.0->2.0</strong></p>
+select *<br>
+from legacy2030<br>
+where synsetid=100130045;<br>
+
+<p><strong>----wordnet 2.0->3.0 for 'want' from sensekey</strong></p>
+select legacy2030.*,legacysensekey2030.sensekey<br>
+from legacysensekey2030<br>
+left join legacy2030 on legacy2030.mapid = legacysensekey2030.mapid<br>
+where legacysensekey2030.sensekey like 'want\%%';<br>
+
+<p><strong>--get synonyms for 'house' (all senses)</strong></p>
+select synsetid, w2.lemma from sense <br>
+left join word as w2 on w2.wordid=sense.wordid<br>
+where sense.synsetid in<br>
+(<br>
+select sense.synsetid from word as w1<br>
+left join sense on w1.wordid=sense.wordid<br>
+where w1.lemma='house'<br>
+)<br>
+and w2.lemma<>'house';<br>
+
+<p><strong>--get synset offset of 'guide' in WordNet database files</strong></p>
+select synsetid<br>
+from sense<br>
+left join word on word.wordid = sense.wordid<br>
+where word.lemma = 'guide';<br><br>
+
+<i>
+then handle result list (pseudo code):<br>
+if (100000000<= result <200000000)<br>
+	&nbsp;&nbsp;it's a noun<br>
+	&nbsp;&nbsp;return result - 100000000<br>
+else if (200000000<= the result <300000000)<br>
+	&nbsp;&nbsp;it's a verb<br>
+	&nbsp;&nbsp;return result - 200000000<br>
+else if (300000000<= result <400000000)<br>
+	&nbsp;&nbsp;it's an adjective<br>
+	&nbsp;&nbsp;return result - 300000000<br>
+else if (400000000<= result <500000000)<br>
+	&nbsp;&nbsp;it's an adverb<br>
+	&nbsp;&nbsp;return result - 400000000<br>
+else<br>
+	&nbsp;&nbsp;abnormal<br>
+<i>
+
+</body>
+</html>

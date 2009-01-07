@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>WordNet SQL Builder</title>
+<meta name="author" content="Bernard Bou">
+<meta name="created" content="20050201;12154260">
+<meta name="changedby" content="Bernard Bou">
+<meta name="changed" content="20070220;10000000">
+<meta name="keywords" content="wordnet,sql">
+<link rel="stylesheet" href="wordnet-style.css" type="text/css">
+</head>
+<body>
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td class="color1" width="25%">&nbsp;</td>
+      <td class="color2" width="25%">&nbsp;</td>
+      <td class="color3" width="25%">&nbsp;</td>
+      <td class="color4" width="25%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="4"><p align="center"><img src="images/wnlogo.gif" alt="wordnet" width="279" height="92"><br>
+</p></td>
+    </tr>
+    <tr>
+      <td colspan="4"><p align="center"> <span class="color4"><b>wordnet sql builder</b></span><br>
+          <span class="subtitle">Bernard Bou</span><br>
+      <a href="mailto:bbou@ac-toulouse.fr">bbou@ac-toulouse.fr</a></p></td>
+    </tr>
+    <tr>
+      <td class="color1" width="25%">&nbsp;</td>
+      <td class="color2" width="25%">&nbsp;</td>
+      <td class="color3" width="25%">&nbsp;</td>
+      <td class="color4" width="25%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="pickarea" width="25%"><div align="center"><a href="http://sourceforge.net/projects/wnsqlbuilder/">project page</a> </div></td>
+      <td class="pickarea" width="25%"><div align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=135112">download</a></div></td>
+      <td class="pickarea" width="25%"><div align="center"><a href="howto.html">howto</a> <br> <a href="schema.html">schema</a> <br> <a href="sql.html">sample queries</a></div></td>
+      <td class="pickarea" width="25%"><div align="center"><a href="http://wnsqlbuilder.sourceforge.net">web</a> | <a href="http://www.cogsci.princeton.edu/%7Ewn">wordnet home</a> </div></td>
+    </tr>
+    <tr>
+      <td class="color1" width="25%">&nbsp;</td>
+      <td class="color2" width="25%">&nbsp;</td>
+      <td class="color3" width="25%">&nbsp;</td>
+      <td class="color4" width="25%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<p align="center" class="pickarea">Java utility to generate <strong>SQL database</strong> from WordNet standard database as released by the WordNet Project (Princeton University)</p>
+<p><strong>Features</strong></p>
+<ul>
+  <li>Support for MySql and PostGreSQL DBMS.</li>
+  <li>Complete port (however, orphaned morphological forms are dropped, and so are VerbNet/XWordNet data that cannot be linked to WordNet entries).</li>
+  <li>Incremental build support.</li>
+  <li>Retains synset index as primary key allowing easy reference to wordnet original database</li>
+  <li>Includes support for WordNet 3.0</li>
+  <li>Includes support for WordNet 2.0 to 2.1, 2.1 to 3.0, 2.0 to 3.0 sense maps</li>
+  <li>Includes support for VerbNet 2.1</li>
+  <li>Includes support for XWordNet 2.0-1.1</li>
+  <li>Ready-to-use database (see <a href="http://sourceforge.net/project/showfiles.php?group_id=135112&package_id=219735">wnsqldatabase package</a> in download section) including
+  <ul>
+   <li>WordNet 3.0</li>
+   <li>WordNet 2.0 to 2.1, 2.1 to 3.0, 2.0 to 3.0 sense maps</li>
+   <li>VerbNet 2.1</li>
+   <li>XWordNet 2.0-1.1</li>
+  </ul></li>
+</ul>
+<p><strong>Requirements</strong></p>
+<ul>
+  <li>Requires Java 1.5 (uses generics).</li>
+</ul>
+<p><strong>Related projects</strong></p>
+<ul>
+  <li><a href="http://wnwa.sourceforge.net">WordNet Web Application</a> which uses this implementation.</li>
+  <li><a href="http://wnjn.sourceforge.net">WordNet Java Native</a></li>
+</ul>
+<p><strong>Downloads</strong></p>
+<ul>
+  <li>the WnSqlBuilder utility (source and Java executable) </li>
+  <li>the WordNet 3.0 patch that fixes a limited number of problems with the original database releases</li>
+  <li>the 3.0 WordNet resulting databases in PostGreSql format</li>
+  <li>the 3.0 WordNet resulting databases in MySql format</li>
+</ul>
+<table align="center" border="0">
+  <tr>
+    <td width="128"><div align="center"><img src="images/javalogo.gif" alt="java" width="68" height="105"></div></td>
+    <td width="128"><div align="center"><img src="images/mysql.gif" width="100" height="52"></div></td>
+    <td width="128"><div align="center"><br>
+        <img src="images/postgresql.gif" width="100"></div></td>
+    <td width="128"><div align="center"><img src="images/built-on-eclipse.gif" alt="eclipse" width="109" height="109"></div></td>
+  </tr>
+  <tr>
+    <td><div align="center">Java</div></td>
+    <td><div align="center">MySQL</div></td>
+    <td><div align="center">PostGreSql</div></td>
+    <td><div align="center">Eclipse</div></td>
+  </tr>
+</table>
+<p><br>
+</p>
+</body>
+</html>

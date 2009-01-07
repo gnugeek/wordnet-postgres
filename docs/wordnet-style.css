@@ -1,0 +1,123 @@
+/***********************************************/
+/* WordNet App								   */
+/***********************************************/
+body{
+	font-family: Arial,sans-serif;
+	color:#000000;
+	background-color:#F3F1E2;
+	line-height: 1.166;	
+	margin: 0px;
+	padding: 0px;
+}
+
+/******* hyperlink and anchor tag styles *******/
+
+a:link, a:visited{
+	color: #005FA9;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/************** header tag styles **************/
+
+h1{
+ font: bold 120% Arial,sans-serif;
+ color: #334d55;
+ margin: 0px;
+ padding: 0px;
+}
+
+h2{
+ font: bold 114% Arial,sans-serif;
+ color: #006699;
+ margin: 0px;
+ padding: 0px;
+}
+
+h3{
+ font: bold 100% Arial,sans-serif;
+ color: #334d55;
+ margin: 0px;
+ padding: 0px;
+}
+
+h4{
+ font: 100% Arial,sans-serif;
+ color: #333333;
+ margin: 0px;
+ padding: 0px;
+}
+
+h5{
+ font: 100% Arial,sans-serif;
+ color: #334d55;
+ margin: 0px;
+ padding: 0px;
+}
+
+
+/*************** list tag styles ***************/
+
+ul{
+ list-style-type: square;
+}
+
+ul ul{
+ list-style-type: disc;
+}
+
+ul ul ul{
+ list-style-type: none;
+}
+
+/********* form and related tag styles *********/
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+label{
+ font: bold 1em Arial,sans-serif;
+ color: #334d55;
+}
+				
+input{
+font-family: Arial,sans-serif;
+}
+
+.titlearea{
+}
+
+.pickarea{
+	background-color:#FFFFFF;
+}
+
+.subtitle{
+	color:#808080;
+}
+
+.subtitle2{
+	color:#6666CC;
+}
+
+.header{
+	color:#FFFFFF;
+	background-color:#999999;
+}
+.color1{
+	color:#FFFFFF;
+	background-color:#999999;
+}
+.color2{
+	background-color:#FFFFCC;
+}
+.color3{
+	background-color:#FFCCCC;
+}
+.color4{
+	background-color:#E7E8FE;
+}

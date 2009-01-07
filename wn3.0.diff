@@ -1,0 +1,337 @@
+diff -Nru /opt/WordNet-3.0//dict.orig/data.adj /opt/WordNet-3.0//dict/data.adj
+--- /opt/WordNet-3.0//dict.orig/data.adj	2007-01-17 22:42:27.000000000 +0100
++++ /opt/WordNet-3.0//dict/data.adj	2007-01-27 17:15:24.000000000 +0100
+@@ -57,7 +57,7 @@
+ 00006245 00 s 01 relational 0 001 & 00006032 a 0000 | having a relation or being related  
+ 00006336 00 a 02 absorbent 0 absorptive 0 015 = 04940964 n 0000 + 02765464 v 0201 + 01539633 v 0201 + 05010062 n 0201 + 04940964 n 0101 + 02765464 v 0101 + 01539633 v 0101 ! 00007813 a 0101 & 00006777 a 0000 & 00006885 a 0000 & 00007096 a 0000 & 00007208 a 0000 & 00007331 a 0000 & 00007516 a 0000 & 00007697 a 0000 | having power or capacity or tendency to absorb or soak up something (liquids or energy etc.); "as absorbent as a sponge"  
+ 00006777 00 s 02 absorbefacient 0 sorbefacient 0 001 & 00006336 a 0000 | inducing or promoting absorption  
+-00006885 00 s 03 assimilating 0 assimilative 0 assimilatory 0 003 & 00006336 a 0000 + 01540042 v 0301 + 01540042 v 0201 | capable of taking (gas, light, or liquids) into a solution; "an assimilative substance  
++00006885 00 s 03 assimilating 0 assimilative 0 assimilatory 0 003 & 00006336 a 0000 + 01540042 v 0301 + 01540042 v 0201 | capable of taking (gas, light, or liquids) into a solution;"an assimilative substance"  
+ 00007096 00 s 01 hygroscopic 0 002 & 00006336 a 0000 + 03554645 n 0101 | absorbing moisture (as from the air)  
+ 00007208 00 s 01 receptive 0 001 & 00006336 a 0000 | able to absorb liquid (not repellent); "the paper is ink-receptive"  
+ 00007331 00 s 01 shock-absorbent 0 001 & 00006336 a 0000 | having the capacity to absorb the energy of an impact; "the material absorbs shock and is used for shock-absorbent insoles"  
+@@ -139,7 +139,7 @@
+ 00023278 00 s 02 veracious 0 right 0 001 & 00021766 a 0000 | precisely accurate; "a veracious account"  
+ 00023383 00 a 01 inaccurate 0 009 ^ 01839417 a 0000 ^ 00632438 a 0000 ^ 00915787 a 0000 = 04802907 n 0000 ! 00021766 a 0101 & 00023655 a 0000 & 00023854 a 0000 & 00024139 a 0000 & 00024241 a 0000 | not exact; "an inaccurate translation"; "the thermometer is inaccurate"  
+ 00023655 00 s 02 away 0 outside 0 002 & 00023383 a 0000 ;c 00471613 n 0000 | (of a baseball pitch) on the far side of home plate from the batter; "the pitch was away (or wide)"; "an outside pitch"  
+-00023854 00 s 03 faulty 0 incorrect 0 wrong 0 003 & 00023383 a 0000 + 00070965 n 0103 + 14472299 n 0102 | characterized by errors; not agreeing with a model or not following established rules; "he submitted a faulty report"; "an incorrect transcription"; the wrong side of the road"  
++00023854 00 s 03 faulty 0 incorrect 0 wrong 0 003 & 00023383 a 0000 + 00070965 n 0103 + 14472299 n 0102 | characterized by errors; not agreeing with a model or not following established rules; "he submitted a faulty report"; "an incorrect transcription";"the wrong side of the road"  
+ 00024139 00 s 01 unfaithful 0 001 & 00023383 a 0000 | not trustworthy; "an unfaithful reproduction"  
+ 00024241 00 s 02 wide 0 wide_of_the_mark 0 001 & 00023383 a 0000 | not on target; "the kick was wide"; "the arrow was wide of the mark"; "a claim that was wide of the truth"  
+ 00024417 00 a 01 accustomed 0 002 ! 00024834 a 0101 & 00024619 a 0000 | (often followed by `to') in the habit of or adapted to; "accustomed to doing her own work"; "I've grown accustomed to her face"  
+@@ -2370,7 +2370,7 @@
+ 00413312 00 s 02 preliterate 0 nonliterate 0 001 & 00412567 a 0000 | used of a society that has not developed writing  
+ 00413432 00 s 01 primitive 0 004 & 00412567 a 0000 ;c 06143546 n 0000 + 09627462 n 0101 + 14472624 n 0103 | used of preliterate or tribal or nonindustrial societies; "primitive societies"  
+ 00413622 00 a 02 classical 0 classic 0 004 ;c 06156968 n 0000 ! 00414227 a 0101 & 00413861 a 0000 & 00414080 a 0000 | of or relating to the most highly developed stage of an earlier civilisation and its culture; "classic Cinese pottery"  
+-00413861 00 s 05 classical 1 classic 1 Greco-Roman 0 Graeco-Roman 0 Hellenic 0 001 & 00413622 a 0000 | of or pertaining to or characteristic of the ancient Greek and Roman cultures; "classical mythology"; "classical   
++00413861 00 s 05 classical 1 classic 1 Greco-Roman 0 Graeco-Roman 0 Hellenic 0 001 & 00413622 a 0000 | of or pertaining to or characteristic of the ancient Greek and Roman cultures; "classical mythology"               
+ 00414080 00 s 02 neoclassic 0 neoclassical 0 002 & 00413622 a 0000 + 06154464 n 0201 | characteristic of a revival of an earlier classical style  
+ 00414227 00 a 01 nonclassical 0 004 ;c 06156968 n 0000 ! 00413622 a 0101 & 00414354 a 0000 & 00414518 a 0000 | not classical  
+ 00414354 00 s 01 modern 0 003 & 00414227 a 0000 + 05050668 n 0101 + 05050668 n 0102 | characteristic of present-day art and music and literature and architecture  
+@@ -5674,7 +5674,7 @@
+ 01031701 00 s 02 web-footed 0 web-toed 0 001 & 01031232 a 0000 | having feet with webbed toes  
+ 01031797 00 a 01 footless 0 002 ! 01031232 a 0101 & 01031908 a 0000 | having no feet or analogous appendages  
+ 01031908 00 s 02 apodal 0 apodous 0 001 & 01031797 a 0000 | (of snakes and eels) naturally footless; "eels are apodal"  
+-01032029 00 a 01 toed 0 004 ! 01032531 a 0101 & 01032226 a 0000 & 01032339 a 0000 & 01032451 a 0000 | having a toe or toes of a specified kind; often used in combination; "long-toed; "five-toed"  
++01032029 00 a 01 toed 0 004 ! 01032531 a 0101 & 01032226 a 0000 & 01032339 a 0000 & 01032451 a 0000 | having a toe or toes of a specified kind; often used in combination; "long-toed";"five-toed"  
+ 01032226 00 s 02 pointy-toed 0 pointed-toe 0 001 & 01032029 a 0000 | having a pointed toe; "pointy-toed shoes"  
+ 01032339 00 s 02 square-toed 0 squared-toe 0 001 & 01032029 a 0000 | having a square toe; "square-toed shoes"  
+ 01032451 00 s 02 two-toed 0 two-toe 0 001 & 01032029 a 0000 | having two toes  
+@@ -6066,7 +6066,7 @@
+ 01098492 00 a 01 fueled 0 006 ! 01099235 a 0101 & 01098678 a 0000 & 01098826 a 0000 & 01098941 a 0000 & 01099051 a 0000 & 01099134 a 0000 | heated, driven, or produced by burning fuel  
+ 01098678 00 s 01 clean-burning 0 001 & 01098492 a 0000 | leaving little contamination while consuming fuel; "natural gas is a clean-burning fuel"  
+ 01098826 00 s 02 coal-fired 0 coal-burning 0 001 & 01098492 a 0000 | fueled by burning coal; "a coal-fired ship"  
+-01098941 00 s 02 wood-fired 0 wood-burning 0 001 & 01098492 a 0000 | fueled by wood; "a wood-burning stove'  
++01098941 00 s 02 wood-fired 0 wood-burning 0 001 & 01098492 a 0000 | fueled by wood; "a wood-burning stove"  
+ 01099051 00 s 01 liquid-fueled 0 001 & 01098492 a 0000 | fueled by a liquid fuel  
+ 01099134 00 s 01 oil-fired 0 001 & 01098492 a 0000 | fueled by burning oil; "an oil-fired furnace"  
+ 01099235 00 a 01 unfueled 0 003 ! 01098492 a 0101 & 01099348 a 0000 & 01099435 a 0000 | not provided with fuel  
+@@ -11919,7 +11919,7 @@
+ 02164165 00 s 02 portentous 0 prodigious 0 003 & 02161432 a 0000 + 07286368 n 0206 + 07286368 n 0102 | of momentous or ominous significance; "such a portentous...monster raised all my curiosity"- Herman Melville; "a prodigious vision"  
+ 02164402 00 a 02 insignificant 0 unimportant 4 012 ^ 01497736 a 0000 ^ 01279978 a 0000 = 05169813 n 0000 + 14436438 n 0202 + 05172596 n 0201 + 05173579 n 0101 ! 02161432 a 0101 & 02164713 a 0000 & 02164913 a 0000 & 02165171 a 0000 & 02165318 a 0000 & 02165432 a 0000 | devoid of importance, meaning, or force  
+ 02164713 00 s 02 hole-and-corner 0 hole-in-corner 0 001 & 02164402 a 0000 | relating to the peripheral and unimportant aspects of life; "a hole-and-corner life in some obscure community"- H.G.Wells  
+-02164913 00 s 05 flimsy 3 fragile 0 slight 0 tenuous 0 thin 1 004 & 02164402 a 0000 + 05114781 n 0504 + 05040939 n 0402 + 05173205 n 0303 | lacking substance or significance; "slight evidence"; "a tenuous argument"; "a thin plot"; a fragile claim to fame"  
++02164913 00 s 05 flimsy 3 fragile 0 slight 0 tenuous 0 thin 1 004 & 02164402 a 0000 + 05114781 n 0504 + 05040939 n 0402 + 05173205 n 0303 | lacking substance or significance; "slight evidence"; "a tenuous argument"; "a thin plot";"a fragile claim to fame"  
+ 02165171 00 s 01 inappreciable 0 001 & 02164402 a 0000 | too small to make a significant difference; "inappreciable fluctuations in temperature"  
+ 02165318 00 s 01 light 0 001 & 02164402 a 0000 | having little importance; "losing his job was no light matter"  
+ 02165432 00 s 02 superficial 0 trivial 0 004 & 02164402 a 0000 + 00840413 v 0201 + 04486445 n 0202 + 05820462 n 0203 | of little substance or significance; "a few superficial editorial changes"; "only trivial objections"  
+@@ -11961,7 +11961,7 @@
+ 02170673 00 s 03 sagittate 0 sagittiform 0 arrow-shaped 0 001 & 02166346 a 0000 | (of a leaf shape) like an arrow head without flaring base lobes  
+ 02170821 00 s 02 spatulate 0 spatula-shaped 0 001 & 02166346 a 0000 | (of a leaf shape) having a broad rounded apex and a narrow base  
+ 02170957 00 s 01 unlobed 0 001 & 02166346 a 0000 | without lobes  
+-02171024 00 a 01 compound 0 031 ^ 02176178 a 0000 ^ 02245403 a 0000 ^ 02244619 a 0000 ;c 06066555 n 0000 ! 02166346 a 0101 & 02171724 a 0000 & 02171836 a 0000 & 02171938 a 0000 & 02172038 a 0000 & 02172152 a 0000 & 02172255 a 0000 & 02172377 a 0000 & 02172488 a 0000 & 02172617 a 0000 & 02172770 a 0000 & 02172851 a 0000 & 02172995 a 0000 & 02173125 a 0000 & 02173264 a 0000 & 02173371 a 0000 & 02173510 a 0000 & 02173632 a 0000 & 02173773 a 0000 & 02173930 a 0000 & 02174089 a 0000 & 02174188 a 0000 & 02174305 a 0000 & 02174417 a 0000 & 02174542 a 0000 & 02174678 a 0000 & 02174781 a 0000 |  composed of more than one part; "compound leaves are composed of several lobes; "compound flower heads"  
++02171024 00 a 01 compound 0 031 ^ 02176178 a 0000 ^ 02245403 a 0000 ^ 02244619 a 0000 ;c 06066555 n 0000 ! 02166346 a 0101 & 02171724 a 0000 & 02171836 a 0000 & 02171938 a 0000 & 02172038 a 0000 & 02172152 a 0000 & 02172255 a 0000 & 02172377 a 0000 & 02172488 a 0000 & 02172617 a 0000 & 02172770 a 0000 & 02172851 a 0000 & 02172995 a 0000 & 02173125 a 0000 & 02173264 a 0000 & 02173371 a 0000 & 02173510 a 0000 & 02173632 a 0000 & 02173773 a 0000 & 02173930 a 0000 & 02174089 a 0000 & 02174188 a 0000 & 02174305 a 0000 & 02174417 a 0000 & 02174542 a 0000 & 02174678 a 0000 & 02174781 a 0000 |  composed of more than one part; "compound leaves are composed of several lobes";"compound flower heads"  
+ 02171724 00 s 03 bilobate 0 bilobated 0 bilobed 0 001 & 02171024 a 0000 | having two lobes; "a bilobate leaf"  
+ 02171836 00 s 01 binate 0 001 & 02171024 a 0000 | growing in two parts or in pairs; "binate leaves"  
+ 02171938 00 s 01 bipartite 0 001 & 02171024 a 0000 | divided into two portions almost to the base  
+@@ -12747,7 +12747,7 @@
+ 02297586 00 s 01 nonnormative 0 001 & 02297166 a 0000 | not based on a norm  
+ 02297664 00 a 02 standard 3 received 4 004 ;c 06172789 n 0000 ! 02298285 a 0101 & 02297966 a 0000 & 02298152 a 0000 | conforming to the established language usage of educated native speakers; "standard English" (American); "received standard English is sometimes called the King's English" (British)  
+ 02297966 00 s 01 acceptable 0 004 & 02297664 a 0000 ;c 06172789 n 0000 + 04792679 n 0101 + 04792679 n 0102 | judged to be in conformity with approved usage; "acceptable English usage"  
+-02298152 00 s 01 classical 0 001 & 02297664 a 0000 | (language) having the form used by ancient standard authors; "classical Greek  
++02298152 00 s 01 classical 0 001 & 02297664 a 0000 | (language) having the form used by ancient standard authors;"classical Greek"  
+ 02298285 00 a 01 nonstandard 3 004 ;c 06172789 n 0000 ! 02297664 a 0101 & 02298642 a 0000 & 02298766 a 0000 | not conforming to the language usage of a prestige group within a community; "a nonstandard dialect is one used by uneducated speakers or socially disfavored groups"; "the common core of nonstandard words and phrases in folk speech"- A.R.Dunlap  
+ 02298642 00 s 01 bad 0 003 & 02298285 a 0000 ;c 06172789 n 0000 ;u 07075172 n 0000 | nonstandard; "so-called bad grammar"  
+ 02298766 00 s 02 unacceptable 0 unaccepted 0 003 & 02298285 a 0000 ;c 06172789 n 0000 + 04793925 n 0102 | not conforming to standard usage; "the following use of `access' was judged unacceptable by a panel of linguists; `You can access your cash at any of 300 automatic tellers'"  
+@@ -15697,7 +15697,7 @@
+ 02773472 01 a 01 panicled 0 002 ;c 06066555 n 0000 \ 13132656 n 0101 | having panicles; occurring in panicles; "a panicled inflorescence"  
+ 02773612 01 a 01 papilliform 0 001 \ 05473735 n 0101 | shaped like a papilla  
+ 02773691 01 a 01 paradigmatic 2 003 + 06309684 n 0102 ! 02808653 a 0101 \ 06309684 n 0102 | related as members of a substitution class; "paradigmatic word associations"  
+-02773862 01 a 01 paramedical 0 002 + 10398176 n 0102 + 10398176 n 0101 | of or denoting a person who assists physicians and nurses or is trained physicians and nurses in their activities; "ambulance drivers are paramedical to give emergency medical aid; "ambulance drivers are paramedical personnel"  
++02773862 01 a 01 paramedical 0 002 + 10398176 n 0102 + 10398176 n 0101 | of or denoting a person who assists physicians and nurses or is trained physicians and nurses in their activities; "ambulance drivers are paramedical to give emergency medical aid";"ambulance drivers are paramedical personnel"  
+ 02774164 01 a 01 paranasal 0 001 \ 05528604 n 0101 | adjacent to the nasal cavities; "paranasal sinus"  
+ 02774269 01 a 02 parhelic 0 parheliacal 0 003 \ 11487732 n 0201 + 11487732 n 0101 \ 11487732 n 0101 | relating to or resembling a parhelion  
+ 02774411 01 a 01 parliamentary 0 002 + 08319198 n 0101 \ 08319198 n 0101 | relating to or having the nature of a parliament; "parliamentary reform"; "a parliamentary body"  
+@@ -16992,7 +16992,7 @@
+ 02973540 01 a 01 tragicomic 0 003 ;c 06376154 n 0000 + 07017161 n 0101 \ 07017161 n 0101 | of or relating to or characteristic of tragicomedy; "a playwright specializing in tragicomic drama"  
+ 02973733 01 a 01 abyssal 0 001 \ 09186592 n 0101 | relating to ocean depths from 2000 to 5000 meters  
+ 02973836 01 a 01 neritic 0 001 \ 09369039 n 0101 | of or relating to the region of the sea over the continental shelf which is less than 200 meters deep; "neritic fauna"; "neritic oil"  
+-02974023 01 a 02 baroque 0 Baroque 0 002 \ 15259076 n 0201 \ 15259076 n 0101 | of or relating to or characteristic of the elaborately ornamented style of architecture, art, and music popular in Europe between 1600 and 1750  
++02974023 01 a 02 baroque 0 Baroque 0 001 \ 15259076 n 0201                   | of or relating to or characteristic of the elaborately ornamented style of architecture, art, and music popular in Europe between 1600 and 1750  
+ 02974248 01 a 01 bathyal 0 001 \ 09255343 n 0102 | relating to ocean depths between 200 and 2000 meters (corresponds to the continental slope)  
+ 02974393 01 a 01 hadal 0 001 \ 09376526 n 0104 | relating to the deepest parts of the ocean (below 6000 meters)  
+ 02974507 01 a 02 operculate 0 operculated 0 002 \ 01902368 n 0201 \ 01902368 n 0101 | having an operculum  
+@@ -17996,7 +17996,7 @@
+ 03128816 01 a 01 veterinary 0 003 + 10749715 n 0102 \ 10749715 n 0101 \ 06065423 n 0101 | of or relating to veterinarians or veterinary medicine  
+ 03128963 01 a 01 vibrionic 0 002 + 01364162 n 0101 \ 01364008 n 0101 | caused by bacteria of the genus Vibrio; "vibrionic dysentery"  
+ 03129098 01 a 01 viceregal 0 002 + 10751785 n 0101 \ 10751785 n 0101 | of or relating to a viceroy; "the viceregal visit"  
+-03129222 01 a 01 Vietnamese 0 004 \ 09163192 n 0101 \ 06937229 n 0101 + 09747191 n 0101 \ 09747191 n 0101 |  of or relating to or characteristic of Vietnam or its people or its language ; "the Vietnamese countryside"; the Vietnamese tones"; "Vietnamese boat people"  
++03129222 01 a 01 Vietnamese 0 004 \ 09163192 n 0101 \ 06937229 n 0101 + 09747191 n 0101 \ 09747191 n 0101 |  of or relating to or characteristic of Vietnam or its people or its language ; "the Vietnamese countryside";"the Vietnamese tones"; "Vietnamese boat people"  
+ 03129490 01 a 01 vocative 0 003 ;c 06172789 n 0000 + 06312237 n 0101 \ 06312237 n 0101 | relating to a case used in some languages; "vocative verb endings"  
+ 03129648 01 a 02 voyeuristic 0 voyeuristical 0 008 + 10761326 n 0201 + 00738372 n 0201 \ 00738372 n 0201 \ 10761326 n 0201 + 00738372 n 0101 + 10761326 n 0101 \ 00738372 n 0101 \ 10761326 n 0101 | of or relating to voyeurs or voyeurism; "his voyeuristic pleasures"  
+ 03129915 01 a 01 weatherly 0 003 ;c 04128837 n 0000 + 04774901 n 0101 \ 04774901 n 0101 | (of a sailing vessel) making very little leeway when close-hauled  
+diff -Nru /opt/WordNet-3.0//dict.orig/data.noun /opt/WordNet-3.0//dict/data.noun
+--- /opt/WordNet-3.0//dict.orig/data.noun	2007-01-17 22:42:27.000000000 +0100
++++ /opt/WordNet-3.0//dict/data.noun	2007-01-27 17:11:21.000000000 +0100
+@@ -23321,7 +23321,7 @@
+ 04203356 06 n 01 shop_bell 0 001 @ 02824448 n 0000 | a bell attached to the door of a small shop; warns the proprietor that a customer has entered the shop  
+ 04203514 06 n 01 shop_floor 0 002 @ 04602044 n 0000 #p 03316406 n 0000 | workplace consisting of the part of a factory housing the machines; "the productive work is done on the shop floor"  
+ 04203705 06 n 02 shopfront 0 storefront 0 003 @ 03398467 n 0000 #p 04202417 n 0000 %p 03211789 n 0000 | the front side of a store facing the street; usually contains display windows  
+-04203889 06 n 01 shopping 0 001 @ 03076708 n 0000 | the commodities purchased from stores; "she loaded her shopping into the car"women carrying home shopping didn't give me a second glance"  
++04203889 06 n 01 shopping 0 001 @ 03076708 n 0000 |the commodities purchased from stores;"she loaded her shopping into the car";"women carrying home shopping didn't give me a second glance"  
+ 04204081 06 n 01 shopping_bag 0 001 @ 02773037 n 0000 | a bag made of plastic or strong paper (often with handles); used to transport goods after shopping  
+ 04204238 06 n 01 shopping_basket 0 001 @ 02801938 n 0000 | a handbasket used to carry goods while shopping  
+ 04204347 06 n 01 shopping_cart 0 001 @ 03484083 n 0000 | a handcart that holds groceries or other goods while shopping  
+@@ -25936,7 +25936,7 @@
+ 04638857 07 n 01 softness 2 002 @ 04638585 n 0000 + 01763159 a 0103 | a disposition to be lenient in judging others; "softness is not something permitted of good leaders"  
+ 04639030 07 n 01 overtolerance 0 001 @ 04637923 n 0000 | too much permissiveness  
+ 04639113 07 n 02 unpermissiveness 0 restrictiveness 0 005 @ 04623612 n 0000 + 02003725 a 0201 + 01763445 a 0101 ! 04637923 n 0101 ~ 04639371 n 0000 | a lack of permissiveness or indulgence and a tendency to confine behavior within certain specified limits  
+-04639371 07 n 02 sternness 0 strictness 1 008 @ 04639113 n 0000 + 02436995 a 0202 + 02436995 a 0202 + 00711308 a 0202 + 01785341 a 0104 + 00711308 a 0101 ~ 04639591 n 0000 ~ 04639732 n 0000 | uncompromising resolution  
++04639371 07 n 02 sternness 0 strictness 1 007 @ 04639113 n 0000                   + 02436995 a 0202 + 00711308 a 0202 + 01785341 a 0104 + 00711308 a 0101 ~ 04639591 n 0000 ~ 04639732 n 0000 | uncompromising resolution  
+ 04639591 07 n 01 Puritanism 0 003 @ 04639371 n 0000 + 01300370 a 0103 + 03105296 a 0101 | strictness and austerity in conduct and religion  
+ 04639732 07 n 0a severity 0 severeness 1 harshness 2 rigor 2 rigour 2 rigorousness 1 rigourousness 1 inclemency 0 hardness 4 stiffness 3 010 @ 04639371 n 0000 + 01127302 a 0901 + 00437852 a 0801 + 00915556 a 0601 + 00711059 a 0601 + 00711059 a 0401 + 01803583 a 0301 + 00090219 a 0301 + 01301316 a 0201 + 01301316 a 0101 | excessive sternness; "severity of character"; "the harshness of his punishment was inhuman"; "the rigors of boot camp"  
+ 04640176 07 n 01 good_nature 0 006 @ 04623612 n 0000 ! 04641447 n 0101 ~ 04640356 n 0000 ~ 04640538 n 0000 ~ 04640722 n 0000 ~ 04640830 n 0000 | a cheerful, obliging disposition  
+@@ -25973,7 +25973,7 @@
+ 04646548 07 n 04 seriousness 0 earnestness 0 serious-mindedness 0 sincerity 1 014 @ 04616059 n 0000 + 02118840 a 0402 + 02119971 a 0302 + 02118840 a 0201 + 01910114 a 0202 + 01279611 a 0101 + 02123314 a 0102 + 02118379 a 0101 ! 04648207 n 0101 = 02118379 a 0000 = 02120458 a 0000 ~ 04646990 n 0000 ~ 04647478 n 0000 ~ 04647826 n 0000 | the trait of being serious; "a lack of solemnity is not necessarily a lack of seriousness"- Robert Rice  
+ 04646990 07 n 02 committedness 0 commitment 1 003 @ 04646548 n 0000 + 00518164 a 0101 ~ 04647185 n 0000 | the trait of sincere and steadfast fixity of purpose; "a man of energy and commitment"  
+ 04647185 07 n 01 investment 0 001 @ 04646990 n 0000 | the commitment of something other than money (time, energy, or effort) to a project with the expectation of some worthwhile result; "this job calls for the investment of some hard thinking"; "he made an emotional investment in the work"  
+-04647478 07 n 06 graveness 0 gravity 0 sobriety 1 soberness 0 somberness 0 sombreness 0 012 @ 04646548 n 0000 + 00365261 a 0602 + 00365261 a 0501 + 02119213 a 0403 + 02123314 a 0403 + 02119213 a 0201 + 01278423 a 0201 + 02119213 a 0101 + 01278423 a 0101 + 00365261 a 0602 + 00365261 a 0501 ~ 04648059 n 0000 | a manner that is serious and solemn  
++04647478 07 n 06 graveness 0 gravity 0 sobriety 1 soberness 0 somberness 0 sombreness 0 010 @ 04646548 n 0000 + 00365261 a 0602 + 00365261 a 0501 + 02119213 a 0403 + 02123314 a 0403 + 02119213 a 0201 + 01278423 a 0201 + 02119213 a 0101 + 01278423 a 0101                                     ~ 04648059 n 0000 | a manner that is serious and solemn  
+ 04647826 07 n 04 sedateness 0 staidness 0 solemnity 0 solemness 0 007 @ 04646548 n 0000 + 02119213 a 0404 + 02118840 a 0303 + 02119213 a 0304 + 00689336 a 0202 + 02119213 a 0102 + 00689336 a 0101 | a trait of dignified seriousness  
+ 04648059 07 n 02 stodginess 0 stuffiness 0 004 @ 04647478 n 0000 + 00606347 a 0202 + 00974697 a 0105 + 00606347 a 0101 | dull and pompous gravity  
+ 04648207 07 n 02 frivolity 0 frivolousness 0 007 @ 04616059 n 0000 + 02120458 a 0201 + 02120458 a 0101 ! 04646548 n 0101 ~ 04648440 n 0000 ~ 04648749 n 0000 ~ 04649261 n 0000 | the trait of being frivolous; not serious or sensible  
+@@ -26531,7 +26531,7 @@
+ 04762915 07 n 01 specificity 1 002 @ 04762633 n 0000 + 01099951 a 0101 | the quality of being specific rather than general; "add a desirable note of specificity to the discussion"; "the specificity of the symptoms of the disease"  
+ 04763147 07 n 01 specificity 2 001 @ 04762633 n 0000 | the quality of being specific to a particular organism; "host specificity of a parasite"  
+ 04763293 07 n 03 individuality 0 individualism 0 individuation 0 010 @ 04616059 n 0000 + 02698178 v 0301 + 00141362 v 0301 + 00494027 a 0202 + 09619824 n 0201 + 00493460 a 0101 ! 04764741 n 0101 = 00493460 a 0000 ~ 04763650 n 0000 ~ 04763925 n 0000 | the quality of being individual; "so absorbed by the movement that she lost all sense of individuality"  
+-04763650 07 n 02 singularity 1 uniqueness 0 007 @ 04763293 n 0000 + 01105042 a 0201 + 02215087 a 0202 + 00505853 a 0202 + 00494622 a 0101 + 00494622 a 0101 + 02215087 a 0101 | the quality of being one of a kind; "that singularity distinguished him from all his companions"  
++04763650 07 n 02 singularity 1 uniqueness 0 006 @ 04763293 n 0000 + 01105042 a 0201 + 02215087 a 0202 + 00505853 a 0202 + 00494622 a 0101                   + 02215087 a 0101 | the quality of being one of a kind; "that singularity distinguished him from all his companions"  
+ 04763925 07 n 05 peculiarity 2 specialness 0 specialty 1 speciality 1 distinctiveness 2 011 @ 04763293 n 0000 + 01272718 a 0502 + 00357556 a 0501 + 01104026 a 0203 + 00488187 a 0204 + 01103844 a 0202 + 02278011 a 0201 + 01853228 a 0202 + 01678729 a 0201 + 00357790 a 0101 ~ 04764242 n 0000 | a distinguishing trait  
+ 04764242 07 n 03 idiosyncrasy 0 foible 0 mannerism 0 002 @ 04763925 n 0000 + 00493820 a 0101 | a behavioral attribute that is distinctive and peculiar to an individual  
+ 04764412 07 n 01 generality 0 012 @ 04723816 n 0000 + 00783840 a 0101 + 01426077 a 0101 + 01101391 a 0101 ! 04762633 n 0101 = 01101391 a 0000 = 01103021 a 0000 ~ 04764741 n 0000 ~ 04765166 n 0000 ~ 04765355 n 0000 ~ 04765691 n 0000 ~ 04765851 n 0000 | the quality of being general or widespread or having general applicability  
+@@ -26618,7 +26618,7 @@
+ 04780605 07 n 02 disgustingness 1 unsavoriness 1 002 @ 04780396 n 0000 + 01627965 a 0201 | the property of being extremely unacceptable to the mind  
+ 04780755 07 n 01 nastiness 0 005 @ 04779649 n 0000 + 01587077 a 0101 ! 04779521 n 0101 = 01587077 a 0000 ~ 04781967 n 0000 | the quality of being unpleasant; "I flinched at the nastiness of his wound"  
+ 04780958 07 n 03 offensiveness 0 odiousness 0 distastefulness 0 016 @ 04779649 n 0000 + 01625893 a 0303 + 01460679 a 0204 + 02560035 a 0106 + 01631386 a 0101 + 00908672 a 0102 + 01627965 a 0103 + 01628302 a 0101 + 01624633 a 0101 = 01624633 a 0000 = 01627459 a 0000 = 01628302 a 0000 = 01628677 a 0000 ~ 04706882 n 0000 ~ 04781349 n 0000 ~ 04781755 n 0000 | the quality of being offensive  
+-04781349 07 n 06 loathsomeness 0 repulsiveness 0 sliminess 2 vileness 1 lousiness 0 wickedness 2 011 @ 04780958 n 0000 + 01625893 a 060c + 01587474 a 0503 + 01127782 a 0503 + 02560035 a 0408 + 01133017 a 0304 + 01625063 a 0205 + 00221934 a 0202 + 01625063 a 0205 + 02560035 a 0105 + 01625893 a 0106 | the quality of being disgusting to the senses or emotions; "the vileness of his language surprised us"  
++04781349 07 n 06 loathsomeness 0 repulsiveness 0 sliminess 2 vileness 1 lousiness 0 wickedness 2 010 @ 04780958 n 0000 + 01625893 a 060c + 01587474 a 0503 + 01127782 a 0503 + 02560035 a 0408 + 01133017 a 0304 + 01625063 a 0205 + 00221934 a 0202                   + 02560035 a 0105 + 01625893 a 0106 | the quality of being disgusting to the senses or emotions; "the vileness of his language surprised us"  
+ 04781755 07 n 03 hatefulness 0 obnoxiousness 0 objectionableness 0 006 @ 04780958 n 0000 + 00018850 a 0302 + 01626874 a 0301 + 01626874 a 0202 + 01587787 a 0101 + 01460421 a 0101 | the quality of being hateful  
+ 04781967 07 n 01 beastliness 1 003 @ 04780755 n 0000 ;r 08860123 n 0000 + 01802774 a 0101 | unpleasant nastiness; used especially of nasty weather  
+ 04782116 07 n 04 awfulness 0 dreadfulness 0 horridness 0 terribleness 0 013 @ 04779649 n 0000 + 01126291 a 0406 + 01513050 a 0402 + 01677200 a 0402 + 00193799 a 040c + 01626562 a 0302 + 01127661 a 0301 + 01803247 a 0201 + 01126291 a 0204 + 01126291 a 0103 + 00193799 a 0101 + 01587077 a 0102 ~ 04782466 n 0000 | a quality of extreme unpleasantness  
+@@ -26912,7 +26912,7 @@
+ 04840405 07 n 02 charity 0 brotherly_love 0 002 @ 04840285 n 0000 @ 04847991 n 0000 | a kindly and lenient attitude toward people  
+ 04840537 07 n 01 beneficence 0 005 @ 04849241 n 0000 + 00223802 a 0101 ! 04846533 n 0101 = 00223802 a 0000 ~ 04840715 n 0000 | the quality of being kind or helpful or generous  
+ 04840715 07 n 03 grace 2 grace_of_God 0 free_grace 0 002 @ 04840537 n 0000 ;c 06184270 n 0000 | (Christian theology) the free and unmerited favor or beneficence of God; "God's grace is manifested in the salvation of sinners"; "there but for the grace of God go I"  
+-04840981 07 n 03 benignity 0 benignancy 0 graciousness 1 009 @ 04849241 n 0000 + 00177834 a 0301 + 01372568 a 0302 + 01372773 a 0201 + 01372773 a 0201 ! 04842788 n 0202 + 01372773 a 0101 ! 04842788 n 0101 = 00226618 a 0000 | the quality of being kind and gentle  
++04840981 07 n 03 benignity 0 benignancy 0 graciousness 1 008 @ 04849241 n 0000 + 00177834 a 0301 + 01372568 a 0302 + 01372773 a 0201                   ! 04842788 n 0202 + 01372773 a 0101 ! 04842788 n 0101 = 00226618 a 0000 | the quality of being kind and gentle  
+ 04841245 07 n 01 loving-kindness 0 001 @ 04840011 n 0000 | tender kindness motivated by a feeling of affection  
+ 04841358 07 n 03 consideration 0 considerateness 0 thoughtfulness 1 008 @ 04840011 n 0000 + 00639230 a 0301 ! 04845967 n 0303 + 00638981 a 0201 + 00691312 v 0101 ! 04845967 n 0101 ~ 04663204 n 0000 ~ 04841810 n 0000 | kind and considerate regard for others; "he showed no consideration for her feelings"  
+ 04841664 07 n 02 kindliness 0 helpfulness 1 002 @ 04654337 n 0000 + 01372948 a 0103 | friendliness evidence by a kindly and helpful disposition  
+@@ -28807,7 +28807,7 @@
+ 05205340 07 n 01 uninterestingness 0 006 @ 05204637 n 0000 + 01231638 a 0101 + 01344963 a 0101 ! 05192451 n 0102 ~ 05205739 n 0000 ~ 05206829 n 0000 | inability to capture or hold one's interest  
+ 05205537 07 n 01 voicelessness 0 002 @ 05204637 n 0000 + 00876735 a 0103 | having no voice in the management or control of affairs; "the voicelessness of those who live in situations of hopelessness"  
+ 05205739 07 n 01 dullness 2 007 @ 05205340 n 0000 + 01345307 a 0103 + 00806512 a 0101 = 00806512 a 0000 ~ 05206006 n 0000 ~ 05206237 n 0000 ~ 05206573 n 0000 | the quality of lacking interestingness; "the stories were of a dullness to bring a buffalo to its knees"  
+-05206006 07 n 04 boringness 0 dreariness 0 insipidness 1 insipidity 1 006 @ 05205739 n 0000 + 01345997 a 0301 + 00807399 a 0202 + 00364881 a 020b + 01345307 a 0101 + 00364881 a 020b | extreme dullness; lacking spirit or interest  
++05206006 07 n 04 boringness 0 dreariness 0 insipidness 1 insipidity 1 005 @ 05205739 n 0000 + 01345997 a 0301 + 00807399 a 0202 + 00364881 a 020b + 01345307 a 0101                   | extreme dullness; lacking spirit or interest  
+ 05206237 07 n 03 tediousness 0 tedium 0 tiresomeness 0 006 @ 05205739 n 0000 + 01345307 a 0308 + 01345307 a 0207 + 01345307 a 0107 + 00549236 a 0102 ~ 05206445 n 0000 | dullness owing to length or slowness  
+ 05206445 07 n 01 drag 0 002 @ 05206237 n 0000 ;u 07075172 n 0000 | something tedious and boring; "peeling potatoes is a drag"  
+ 05206573 07 n 05 jejunity 1 jejuneness 1 tameness 2 vapidity 0 vapidness 0 007 @ 05205739 n 0000 + 02308001 a 0501 + 02308001 a 0401 + 00923232 a 0301 + 01345997 a 0202 + 01345997 a 0102 + 01492596 a 0102 | the quality of being vapid and unsophisticated  
+@@ -36435,7 +36435,7 @@
+ 06747190 10 n 01 Annunciation 0 002 @i 06746580 n 0000 ;c 06226057 n 0000 | (Christianity) the announcement to the Virgin Mary by the angel Gabriel of the incarnation of Christ  
+ 06747369 10 n 01 banns 0 002 @ 06746580 n 0000 ;c 01032368 n 0000 | a public announcement of a proposed marriage  
+ 06747484 10 n 03 handout 0 press_release 0 release 0 001 @ 06746580 n 0000 | an announcement distributed to members of the press in order to supplement or replace an oral presentation  
+-06747670 10 n 01 notice 1 004 @ 06746580 n 0000 + 00873682 v 0102 ~ 06747907 n 0000 ~ 06748133 n 0000 | an announcement containing information about an event; "you didn't give me enough notice"; "an obituary notice"; "a notice of sale  
++06747670 10 n 01 notice 1 004 @ 06746580 n 0000 + 00873682 v 0102 ~ 06747907 n 0000 ~ 06748133 n 0000 | an announcement containing information about an event; "you didn't give me enough notice"; "an obituary notice";"a notice of sale"  
+ 06747907 10 n 01 caveat 2 002 @ 06747670 n 0000 ;c 08441203 n 0000 | (law) a formal notice filed with a court or officer to suspend a proceeding until filer is given a hearing; "a caveat filed against the probate of a will"  
+ 06748133 10 n 03 obituary 0 obit 0 necrology 0 001 @ 06747670 n 0000 | a notice of someone's death; usually includes a short biography  
+ 06748270 10 n 01 Parallel_Lives 0 001 @i 06515827 n 0000 | a collection of biographies of famous pairs of Greeks and Romans written by Plutarch; used by Shakespeare in writing some of his plays  
+@@ -40823,7 +40823,7 @@
+ 07532832 12 n 01 dolefulness 0 002 @ 07532440 n 0000 + 01362387 a 0101 | sadness caused by grief or affliction  
+ 07532945 12 n 01 heaviness 0 002 @ 07532440 n 0000 + 01188762 a 0101 | persisting sadness; "nothing lifted the heaviness of her heart after her loss"  
+ 07533097 12 n 01 melancholy 0 005 @ 07532440 n 0000 ~ 07533257 n 0000 ~ 07533492 n 0000 ~ 07533607 n 0000 ~ 07533735 n 0000 | a feeling of thoughtful sadness  
+-07533257 12 n 04 gloom 0 gloominess 0 somberness 0 sombreness 0 007 @ 07533097 n 0000 @ 07521674 n 0000 + 00365261 a 0402 + 00365261 a 0301 + 00365261 a 0402 + 00365261 a 0301 + 00703615 a 0201 | a feeling of melancholy apprehension  
++07533257 12 n 04 gloom 0 gloominess 0 somberness 0 sombreness 0 005 @ 07533097 n 0000 @ 07521674 n 0000 + 00365261 a 0402 + 00365261 a 0301                                     + 00703615 a 0201 | a feeling of melancholy apprehension  
+ 07533492 12 n 01 heavyheartedness 0 002 @ 07533097 n 0000 + 01362598 a 0101 | a feeling of dispirited melancholy  
+ 07533607 12 n 02 pensiveness 0 brooding 0 002 @ 07533097 n 0000 + 02419434 a 0106 | persistent morbid meditation on a problem  
+ 07533735 12 n 02 world-weariness 0 Weltschmerz 0 002 @ 07533097 n 0000 + 02432682 a 0102 | sadness on thinking about the evils of the world  
+@@ -44444,7 +44444,7 @@
+ 08144907 14 n 01 Navy_Department 0 001 @ 08123167 n 0000 | a former executive department of the United States government; created in 1798 and combined with the War Department in 1947  
+ 08145092 14 n 01 War_Department 0 001 @ 08123167 n 0000 | a former executive department of the United States government; created in 1789 and combined with the Navy Department in 1947  
+ 08145277 14 n 04 United_States_Post_Office 0 US_Post_Office 0 Post_Office 0 PO 0 001 @ 08338847 n 0000 | an independent agency of the federal government responsible for mail delivery (and sometimes telecommunications) between individuals and businesses in the United States  
+-08145553 14 n 02 post_office 1 local_post_office 0 002 @ 08401248 n 0000 %p 08145701 n 0000 | a local branch where postal services are available"  
++08145553 14 n 02 post_office 1 local_post_office 0 002 @ 08401248 n 0000 %p 08145701 n 0000 | a local branch where postal services are available   
+ 08145701 14 n 02 general_delivery 0 poste_restante 0 002 @ 08189659 n 0000 #p 08145553 n 0000 | the part of a post office that handles mail for persons who call for it  
+ 08145871 14 n 02 generally_accepted_accounting_principles 0 GAAP 0 002 @ 07951464 n 0000 %m 05955593 n 0000 | a collection of rules and procedures and conventions that define accepted accounting practice; includes broad guidelines as well as detailed procedures  
+ 08146135 14 n 01 instrumentality 0 002 @ 08189659 n 0000 #p 08119821 n 0000 | a subsidiary organ of government created for a special purpose; "are the judicial instrumentalities of local governments adequate?"; "he studied the French instrumentalities for law enforcement"  
+@@ -46463,7 +46463,7 @@
+ 08561714 15 n 01 southwest 1 001 @ 00027167 n 0000 | a location in the southwestern part of a country, region, or city  
+ 08561835 15 n 01 west 2 001 @ 00027167 n 0000 | a location in the western part of a country, region, or city  
+ 08561946 15 n 01 northwest 1 001 @ 00027167 n 0000 | a location in the northwestern part of a country, region, or city  
+-08562067 15 n 02 Earth 0 earth 1 003 @ 00027167 n 0000 + 01180695 a 0201 + 01180695 a 0101 | the abode of mortals (as contrasted with Heaven or Hell); "it was hell on earth"  
++08562067 15 n 02 Earth 0 earth 1 002 @ 00027167 n 0000 + 01180695 a 0201                   | the abode of mortals (as contrasted with Heaven or Hell); "it was hell on earth"  
+ 08562243 15 n 02 eastern_hemisphere 0 orient 1 005 @ 08583095 n 0000 %p 08562454 n 0000 %p 09189411 n 0000 %p 09211266 n 0000 %p 09275016 n 0000 | the hemisphere that includes Eurasia and Africa and Australia  
+ 08562454 15 n 01 Old_World 0 002 @i 08630985 n 0000 #p 08562243 n 0000 | the regions of the world that were known to Europeans before the discovery of the Americas  
+ 08562620 15 n 02 East 0 Orient 0 004 @i 08172877 n 0000 = 00825604 a 0000 + 00825807 a 0201 %p 08562757 n 0000 | the countries of Asia  
+@@ -49832,7 +49832,7 @@
+ 09270508 17 n 01 drink 0 002 @ 09225146 n 0000 ;u 07075172 n 0000 | any large deep body of water; "he jumped into the drink and had to be rescued"  
+ 09270657 17 n 01 drumlin 0 001 @ 09270233 n 0000 | a mound of glacial drift  
+ 09270735 17 n 02 dune 0 sand_dune 0 002 @ 09409512 n 0000 ~ 09429630 n 0000 | a ridge of sand created by the wind; found in deserts or near lakes and oceans  
+-09270894 17 n 04 Earth 0 earth 2 world 0 globe 0 012 @i 09456369 n 0000 #m 09439433 n 0000 + 01568684 a 0401 + 10699262 n 0202 + 10699262 n 0102 %p 08499057 n 0000 %p 08583095 n 0000 %p 08676760 n 0000 %p 09307902 n 0000 %p 09334396 n 0000 %p 09339810 n 0000 %p 09436708 n 0000 | the 3rd planet from the sun; the planet we live on; "the Earth moves around the sun"; "he sailed around the world"  
++09270894 17 n 04 Earth 0 earth 2 world 0 globe 0 011 @i 09456369 n 0000 #m 09439433 n 0000 + 01568684 a 0401 + 10699262 n 0202                   %p 08499057 n 0000 %p 08583095 n 0000 %p 08676760 n 0000 %p 09307902 n 0000 %p 09334396 n 0000 %p 09339810 n 0000 %p 09436708 n 0000 | the 3rd planet from the sun; the planet we live on; "the Earth moves around the sun"; "he sailed around the world"  
+ 09271291 17 n 01 East_China_Sea 0 002 @i 09426788 n 0000 #p 09382990 n 0000 | part of the Pacific Ocean near eastern Asia  
+ 09271415 17 n 02 Ebro 0 Ebro_River 0 002 @i 09411430 n 0000 #p 09023321 n 0000 | a river in northeastern Spain; flows into the Mediterranean  
+ 09271558 17 n 02 Elbe 0 Elbe_River 0 002 @i 09411430 n 0000 #p 09275473 n 0000 | a river in central Europe that arises in northwestern Czechoslovakia and flows northward through Germany to empty into the North Sea  
+@@ -58069,7 +58069,7 @@
+ 10698649 18 n 02 Tell 0 William_Tell 0 001 @i 09805324 n 0000 | a Swiss patriot who lived in the early 14th century and who was renowned for his skill as an archer; according to legend an Austrian governor compelled him to shoot an apple from his son's head with his crossbow (which he did successfully without mishap)  
+ 10698970 18 n 03 teller 0 cashier 0 bank_clerk 0 001 @ 09837824 n 0000 | an employee of a bank who receives and pays out money  
+ 10699099 18 n 02 teller 1 vote_counter 0 002 @ 10372373 n 0000 ~ 09892066 n 0000 | an official appointed to count the votes (especially in legislative assembly)  
+-10699262 18 n 04 tellurian 0 earthling 0 earthman 0 worldling 1 003 @ 09620078 n 0000 + 09270894 n 0201 + 09270894 n 0202 | an inhabitant of the earth  
++10699262 18 n 04 tellurian 0 earthling 0 earthman 0 worldling 1 002 @ 09620078 n 0000 + 09270894 n 0201                   | an inhabitant of the earth  
+ 10699415 18 n 03 temp 0 temporary 0 temporary_worker 0 001 @ 09632518 n 0000 | a worker (especially in an office) hired on a temporary basis  
+ 10699558 18 n 02 temporizer 0 temporiser 0 003 @ 10000616 n 0000 + 00318484 v 0202 + 00318484 v 0101 | someone who temporizes; someone who tries to gain time or who waits for a favorable time  
+ 10699752 18 n 01 tempter 0 007 @ 00007846 n 0000 + 01807770 v 0101 + 01807529 v 0101 + 00782527 v 0103 + 00784184 v 0101 + 00793785 v 0101 + 00776523 v 0103 | a person who tempts others; "Satan is the great tempter of mankind"  
+@@ -74975,7 +74975,7 @@
+ 13996909 26 n 01 yoke 0 001 @ 13996719 n 0000 | an oppressive power; "under the yoke of a tyrant"; "they threw off the yoke of domination"  
+ 13997050 26 n 02 enslavement 0 captivity 1 002 @ 13996300 n 0000 + 01065126 a 0201 | the state of being a slave; "So every bondman in his own hand bears the power to cancel his captivity"--Shakespeare  
+ 13997253 26 n 05 bondage 0 slavery 0 thrall 0 thralldom 0 thraldom 0 008 @ 13996300 n 0000 + 13997253 n 0503 + 13997253 n 0403 + 13997253 n 0304 + 13997253 n 0305 ~ 13997778 n 0000 ~ 13998014 n 0000 ~ 13998263 n 0000 | the state of being under the control of another person  
+-13997529 26 n 01 bondage 1 001 @ 13996300 n 0000 | the state of being under the control of a force or influence or abstract power; "he was in bondage to fear:; "he sought release from his bondage to Satan"; "a self freed from the bondage of time"  
++13997529 26 n 01 bondage 1 001 @ 13996300 n 0000 | the state of being under the control of a force or influence or abstract power; "he was in bondage to fear"; "he sought release from his bondage to Satan"; "a self freed from the bondage of time"  
+ 13997778 26 n 01 bonded_labor 0 001 @ 13997253 n 0000 | a practice in which employers give high-interest loans to workers whose entire families then labor at low wages to pay off the debt; the practice is illegal in the United States  
+ 13998014 26 n 01 servitude 0 002 @ 13997253 n 0000 ~ 13953057 n 0000 | state of subjection to an owner or master or forced labor imposed as punishment; "penal servitude"  
+ 13998186 26 n 01 peonage 0 001 @ 13996300 n 0000 | the condition of a peon  
+diff -Nru /opt/WordNet-3.0//dict.orig/data.verb /opt/WordNet-3.0//dict/data.verb
+--- /opt/WordNet-3.0//dict.orig/data.verb	2007-01-17 22:42:27.000000000 +0100
++++ /opt/WordNet-3.0//dict/data.verb	2007-01-27 16:37:39.000000000 +0100
+@@ -4561,7 +4561,7 @@
+ 00941037 32 v 01 swallow 1 001 @ 00941990 v 0000 01 + 08 00 | utter indistinctly; "She swallowed the last words of her speech"  
+ 00941166 32 v 01 raise 0 002 @ 00940384 v 0000 ~ 01025455 v 0000 01 + 08 00 | cause to be heard or known; express or utter; "raise a shout"; "raise a protest"; "raise a sad cry"  
+ 00941346 32 v 01 breathe 1 001 @ 00940384 v 0000 01 + 08 00 | utter or tell; "not breathe a word"  
+-00941446 32 v 01 drop 0 001 @ 00940384 v 0000 01 + 08 00 | utter with seeming casualness; "drop a hint"; drop names"  
++00941446 32 v 01 drop 0 001 @ 00940384 v 0000 01 + 08 00 | utter with seeming casualness; "drop a hint";"drop names"  
+ 00941565 32 v 01 pour_out 0 001 @ 00940384 v 0000 01 + 08 00 | express without restraint; "The woman poured out her frustrations as the judge listened"  
+ 00941719 32 v 02 miaou 0 miaow 0 003 @ 00983824 v 0000 + 07386614 n 0204 + 07386614 n 0103 02 + 01 00 + 02 00 | make a cat-like sound  
+ 00941855 32 v 01 get_off 4 001 @ 00940384 v 0000 01 + 08 00 | deliver verbally; "He got off the best line I've heard in a long time"  
+@@ -5618,7 +5618,7 @@
+ 01148460 33 v 01 double-team 0 002 @ 01148296 v 0000 ;c 00523513 n 0000 01 + 09 00 | cover with two defensive players  
+ 01148580 33 v 01 cover d 002 $ 01148296 v 0000 @ 01128193 v 0000 01 + 08 00 | be responsible for guarding an opponent in a game  
+ 01148710 33 v 02 pull d root_for 0 001 @ 01148961 v 0000 01 + 22 00 | take sides with; align oneself with; show strong sympathy for; "We all rooted for the home team"; "I'm pulling for the underdog"; "Are you siding with the defender of the title?"  
+-01148961 33 v 01 side 0 002 @ 00733632 v 0000 ~ 01148710 v 0000 01 + 22 00 | take sides for or against; "Who are you widing with?"; "I"m siding against the current candidate"  
++01148961 33 v 01 side 0 002 @ 00733632 v 0000 ~ 01148710 v 0000 01 + 22 00 | take sides for or against; "Who are you widing with?"; "I'm siding against the current candidate"  
+ 01149138 33 v 02 champion 0 defend 4 005 @ 02453889 v 0000 + 02525876 a 0202 + 09614684 n 0201 + 10677713 n 0103 + 09906538 n 0101 02 + 08 00 + 09 00 | protect or fight for as a champion  
+ 01149327 33 v 01 deploy 0 003 @ 01987160 v 0000 + 01143409 n 0101 ~ 01149470 v 0000 01 + 08 00 | place troops or weapons in battle formation  
+ 01149470 33 v 01 play 3 007 $ 01079873 v 0000 $ 01080064 v 0000 @ 01149327 v 0000 + 00430140 n 0103 ~ 01149868 v 0000 ~ 01150010 v 0000 ~ 02300549 v 0000 01 + 08 00 | put (a card or piece) into play during a game, or act strategically as if in a card game; "He is playing his cards close to his chest"; "The Democrats still have some cards to play before they will concede the electoral victory"  
+@@ -8253,7 +8253,7 @@
+ 01652731 36 v 01 fruit 0 004 @ 01652139 v 0000 + 13134947 n 0101 + 14575849 n 0101 + 13086753 n 0101 01 + 01 00 | bear fruit; "the trees fruited early this year"  
+ 01652895 36 v 01 fruit 1 003 > 01652731 v 0000 + 13134947 n 0101 + 13086753 n 0101 01 + 08 00 | cause to bear fruit  
+ 01653013 36 v 02 create_from_raw_material 0 create_from_raw_stuff 0 018 @ 01617192 v 0000 ~ 00266081 v 0000 ~ 01633173 v 0000 ~ 01639105 v 0000 ~ 01639364 v 0000 ~ 01653873 v 0000 ~ 01659248 v 0000 ~ 01660976 v 0000 ~ 01663749 v 0000 ~ 01663920 v 0000 ~ 01664172 v 0000 ~ 01665638 v 0000 ~ 01671039 v 0000 ~ 01672753 v 0000 ~ 01673732 v 0000 ~ 01673891 v 0000 ~ 01674544 v 0000 ~ 01755504 v 0000 01 + 08 00 | make from scratch  
+-01653442 36 v 03 manufacture 0 fabricate 1 construct 1 010 @ 01653873 v 0000 + 00751944 n 0203 + 00912001 n 0201 + 00924825 n 0201 + 00924825 n 0102 + 00923444 n 0102 + 10292316 n 0101 + 08060446 n 0101 ~ 01625891 v 0000 ~ 01654156 v 0000 02 + 08 00 + 11 00 | put together out of artificial or natural components or parts; "the company fabricates plastic chairs"; "They manufacture small toys"; He manufactured a popular cereal"  
++01653442 36 v 03 manufacture 0 fabricate 1 construct 1 010 @ 01653873 v 0000 + 00751944 n 0203 + 00912001 n 0201 + 00924825 n 0201 + 00924825 n 0102 + 00923444 n 0102 + 10292316 n 0101 + 08060446 n 0101 ~ 01625891 v 0000 ~ 01654156 v 0000 02 + 08 00 + 11 00 | put together out of artificial or natural components or parts; "the company fabricates plastic chairs"; "They manufacture small toys";"He manufactured a popular cereal"  
+ 01653873 36 v 01 make b 007 @ 01653013 v 0000 + 00923995 n 0103 ~ 01626138 v 0000 ~ 01627105 v 0000 ~ 01653442 v 0000 ~ 01658188 v 0000 ~ 01659144 v 0000 02 + 08 00 + 11 00 | make by shaping or bringing together constituents; "make a dress"; "make a cake"; "make a wall of stones"  
+ 01654156 36 v 01 raft 0 002 @ 01653442 v 0000 + 04045397 n 0101 01 + 08 00 | make into a raft; "raft these logs"  
+ 01654271 36 v 03 forge 1 fake 0 counterfeit 0 009 @ 01619354 v 0000 + 10105085 n 0302 + 03562262 n 0301 + 10201535 n 0204 + 03318438 n 0201 + 00752298 n 0201 + 10105085 n 0101 + 03562262 n 0102 + 00768921 n 0101 01 + 08 00 | make a copy of with the intent to deceive; "he faked the signature"; "they counterfeited dollar bills"; "She forged a Green Card"  
+@@ -9828,7 +9828,7 @@
+ 01969084 38 v 01 bubble 0 001 @ 01968569 v 0000 02 + 01 00 + 04 00 | rise in bubbles or as if in bubbles; "bubble to the surface"  
+ 01969216 38 v 02 ascend 2 go_up a 012 @ 01835496 v 0000 + 02083391 a 0101 + 02484638 a 0103 + 02484638 a 0101 + 07445480 n 0104 + 00324384 n 0103 + 07445480 n 0103 + 00324384 n 0102 + 09813522 n 0101 ! 01970826 v 0101 ~ 01990281 v 0000 ~ 01990562 v 0000 02 + 02 00 + 08 00 | travel up, "We ascended the mountain"; "go up a ladder"; "The mountaineers slowly ascended the steep slope"  
+ 01969601 38 v 01 uplift 2 002 @ 01968569 v 0000 + 07375781 n 0102 01 + 01 00 | lift up from the earth, as by geologic forces; "the earth's movement uplifted this part of town"  
+-01969779 38 v 03 ascend 5 move_up 1 rise 6 001 @ 00109660 v 0000 04 + 01 00 + 02 00 + 04 00 + 22 00 | move to a better position in life or to a better job; "She ascended from a life of poverty to one of great   
++01969779 38 v 03 ascend 5 move_up 1 rise 6 001 @ 00109660 v 0000 04 + 01 00 + 02 00 + 04 00 + 22 00 | move to a better position in life or to a better job;"She ascended from a life of poverty to one of great"   
+ 01969991 38 v 01 queen 0 003 @ 01080523 v 0000 ;c 00503237 n 0000 + 04033287 n 0101 01 + 01 00 | become a queen; "her pawn queened"  
+ 01970125 38 v 01 chandelle 0 002 @ 01968569 v 0000 ;c 00300441 n 0000 02 + 01 00 + 02 00 | climb suddenly and steeply; "The airplane chandelled"  
+ 01970272 38 v 01 steam 1 001 @ 01968569 v 0000 01 + 01 00 | rise as vapor  
+@@ -10810,7 +10810,7 @@
+ 02161530 39 v 04 glow 1 beam 3 radiate 5 shine 6 002 @ 02133435 v 0000 + 04954534 n 0103 02 + 01 00 + 02 00 | have a complexion with a strong bright color, such as red or pink; "Her face glowed when she came out of the sauna"  
+ 02161758 39 v 01 blur 0 003 @ 00126264 v 0000 + 05940414 n 0101 ! 02161922 v 0101 02 + 08 00 + 11 00 | to make less distinct or clear; "The haze blurs the hills"  
+ 02161922 39 v 01 focus 0 006 @ 02190786 v 0000 + 11455695 n 0101 + 04703235 n 0101 + 00375625 n 0103 ! 02161758 v 0101 ~ 02162162 v 0000 02 + 08 00 + 11 00 | cause to converge on or toward a central point; "Focus the light on this image"  
+-02162162 39 v 01 refocus 0 002 @ 02161922 v 0000 + 00375938 n 0101 02 + 08 00 + 11 00 | focus once again; The physicist refocused the light beam"  
++02162162 39 v 01 refocus 0 002 @ 02161922 v 0000 + 00375938 n 0101 02 + 08 00 + 11 00 | focus once again;"The physicist refocused the light beam"  
+ 02162310 39 v 02 dim 1 dip 0 001 @ 02191106 v 0000 01 + 08 00 | switch (a car's headlights) from a higher to a lower beam  
+ 02162434 39 v 03 dazzle 0 bedazzle 0 daze 1 003 @ 02168555 v 0000 + 05684561 n 0301 + 04952821 n 0101 02 + 08 00 + 09 00 | to cause someone to lose clear vision, especially from intense light; "She was dazzled by the bright headlights"  
+ 02162672 39 v 01 glare 1 003 @ 02763740 v 0000 + 04952570 n 0101 ~ 02162815 v 0000 01 + 01 00 | shine intensely; "The sun glared down on us"  
+@@ -12901,7 +12901,7 @@
+ 02593001 41 v 01 humbug 0 002 @ 02575082 v 0000 + 00753685 n 0105 02 + 02 00 + 09 00 | trick or deceive  
+ 02593107 41 v 01 serve 2 002 $ 02540670 v 0000 @ 02413480 v 0000 02 + 08 00 + 09 00 | devote (part of) one's life or efforts to, as of countries, institutions, or ideas; "She served the art of music"; "He served the church"; "serve the country"  
+ 02593354 41 v 02 invigilate 0 proctor 0 004 @ 02455407 v 0000 + 10478960 n 0201 + 01135795 n 0101 + 10216403 n 0101 02 + 08 00 + 09 00 | watch over (students taking an exam, to prevent cheating)  
+-02593551 41 v 04 lord_it_over 0 queen_it_over 0 put_on_airs 0 act_superior 0 001 @ 02367363 v 0000 09 + 02 00 + 02 04 + 22 04 + 02 03 + 22 03 + 08 02 + 09 02 + 08 01 + 09 01 | act like the master of; "He is lording it over the students"  
++02593551 41 v 04 lord_it_over 0 queen_it_over 0 put_on_airs 0 act_superior 0 001 @ 02367363 v 0000 07 + 02 00         + 22 04         + 22 03 + 08 02 + 09 02 + 08 01 + 09 01 | act like the master of; "He is lording it over the students"  
+ 02593790 41 v 01 queen 0 002 @ 01080235 v 0000 + 04033287 n 0101 01 + 08 00 | promote to a queen, as of a pawn in chess  
+ 02593912 41 v 01 happen 0 002 @ 02594102 v 0000 $ 00344643 v 0000 02 + 28 00 + 34 00 | chance to be or do something, without intention or causation; "I happen to have just what you need!"  
+ 02594102 41 v 01 chance 1 004 @ 00339934 v 0000 + 14483917 n 0102 + 11418138 n 0103 ~ 02593912 v 0000 01 + 01 00 | be the case by chance; "I chanced to meet my old friend in the street"  
+@@ -13466,7 +13466,7 @@
+ 02710402 42 v 02 converge 0 meet 2 008 $ 01205696 v 0000 + 00612114 a 0101 + 00146572 n 0103 + 00146572 n 0102 + 07414740 n 0101 ! 02709906 v 0101 ~ 02710244 v 0000 ! 02732603 v 0101 02 + 01 00 + 04 00 | be adjacent or come together; "The lines converge at this point"  
+ 02710673 42 v 02 bound 0 border 0 012 @ 02711114 v 0000 + 13903387 n 0202 + 08565701 n 0202 + 08512736 n 0202 ^ 02703952 v 0201 + 13903079 n 0101 + 08512259 n 0101 + 13903079 n 0103 + 08512259 n 0102 ~ 02703711 v 0000 ~ 02703790 v 0000 ~ 02710981 v 0000 01 + 11 00 | form the boundary of; be contiguous to  
+ 02710981 42 v 01 shore 0 002 @ 02710673 v 0000 + 09433442 n 0101 01 + 11 00 | serve as a shore to; "The river was shored by trees"  
+-02711114 42 v 03 enclose 0 hold_in 0 confine 0 009 @ 02700867 v 0000 + 13998576 n 0301 + 09273291 n 0101 + 03285912 n 0101 ~ 02710673 v 0000 ~ 02711375 v 0000 ~ 02711543 v 0000 ~ 02711721 v 0000 ~ 02711835 v 0000 01 + 11 00 | close in; darkness enclosed him"  
++02711114 42 v 03 enclose 0 hold_in 0 confine 0 009 @ 02700867 v 0000 + 13998576 n 0301 + 09273291 n 0101 + 03285912 n 0101 ~ 02710673 v 0000 ~ 02711375 v 0000 ~ 02711543 v 0000 ~ 02711721 v 0000 ~ 02711835 v 0000 01 + 11 00 | close in;"darkness enclosed him"  
+ 02711375 42 v 01 embank 0 002 @ 02711114 v 0000 + 03282060 n 0101 01 + 08 00 | enclose with banks, as for support or protection; "The river was embanked with a dyke"  
+ 02711543 42 v 02 rail 0 rail_in 0 004 @ 02711114 v 0000 + 04046590 n 0101 + 04047401 n 0102 + 04047401 n 0101 02 + 08 00 + 11 00 | enclose with rails; "rail in the old graves"  
+ 02711721 42 v 02 box_in 0 box_up 0 001 @ 02711114 v 0000 02 + 08 00 + 11 00 | enclose or confine as if in a box  
+diff -Nru /opt/WordNet-3.0//dict.orig/noun.exc /opt/WordNet-3.0//dict/noun.exc
+--- /opt/WordNet-3.0//dict.orig/noun.exc	2006-12-06 21:54:49.000000000 +0100
++++ /opt/WordNet-3.0//dict/noun.exc	2007-01-27 12:16:37.000000000 +0100
+@@ -530,7 +530,6 @@
+ diastalses diastalsis
+ diastases diastasis
+ diastemata diastema
+-diastemata diastema
+ diathses diathesis
+ diazoes diazo
+ dibbukkim dibbuk
+@@ -1832,7 +1831,6 @@
+ suckfishes suckfish
+ sudaria sudarium
+ sudatoria sudatorium
+-sudatoria sudatorium
+ sulci sulcus
+ summae summa
+ sunfishes sunfish
+@@ -1979,7 +1977,7 @@
+ utriculi utriculus
+ uvulae uvula
+ vacua vacuum
+-vagi vagus vagus
++vagi vagus
+ vaginae vagina
+ valleculae vallecula
+ vaporetti vaporetto
+diff -Nru /opt/WordNet-3.0//dict.orig/sentidx.vrb /opt/WordNet-3.0//dict/sentidx.vrb
+--- /opt/WordNet-3.0//dict.orig/sentidx.vrb	2006-12-06 21:55:23.000000000 +0100
++++ /opt/WordNet-3.0//dict/sentidx.vrb	2007-01-27 12:20:07.000000000 +0100
+@@ -686,7 +686,7 @@
+ crash-dive%2:38:00:: 136
+ crate%2:35:00:: 71
+ crave%2:34:00:: 35
+-crawl%2:38:00:: 152,152
++crawl%2:38:00:: 152
+ crayon%2:36:00:: 115
+ creak%2:39:00:: 142
+ crease%2:30:10:: 19,101

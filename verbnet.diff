@@ -1,0 +1,24 @@
+diff -r /opt/verbnet-2.1-working/amalgamate-22.2.xml /opt/verbnet-2.1.orig/amalgamate-22.2.xml
+298a299
+>                 <MEMBER name="associate" wn="associate%2:41:02"/>
+454a456
+>                         <MEMBER name="entwine" wn="entwine%2:35:00"/>
+455a458
+>                         <MEMBER name="interlock" wn="interlock%2:35:00"/>
+457a461
+>                         <MEMBER name="mate" wn="mate%2:35:02"/>
+459a464
+>                         <MEMBER name="unite" wn="unite%2:42:01 unite%2:30:02"/>
+Seulement dans /opt/verbnet-2.1-working/: amalgamate-22.2.xml~
+diff -r /opt/verbnet-2.1-working/build-26.1.xml /opt/verbnet-2.1.orig/build-26.1.xml
+32c32
+<         <MEMBER name="sculpture" wn=""/>
+---
+>         <MEMBER name="scultpure" wn=""/>
+Seulement dans /opt/verbnet-2.1-working/: build-26.1.xml~
+diff -r /opt/verbnet-2.1-working/conspire-71.xml /opt/verbnet-2.1.orig/conspire-71.xml
+9c9
+<         <MEMBER name="legislate" wn=""/>
+---
+>         <MEMBER name="lesgislate" wn=""/>
+Seulement dans /opt/verbnet-2.1-working/: conspire-71.xml~
